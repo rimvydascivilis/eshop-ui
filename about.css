@@ -1,0 +1,48 @@
+.main-content {
+  min-height: 89.5vh;
+  margin: 0 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+
+  align-items: center;
+
+  margin: 3vw;
+}
+
+.main-content img {
+  width: 80%;
+  margin: 2vw 0;
+  max-width: 90vh;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+
+  gap: 5vw;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  gap: 1vw;
+}
+
+.info p {
+  max-width: 50vw;
+}
+
+.main-content h1 {
+  font-size: 7vh;
+}
+
+.info h2 {
+  font-size: 5vh;
+}

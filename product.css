@@ -1,0 +1,104 @@
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 89.5vh;
+}
+
+.main-border {
+  background-color: #fff;
+  margin: 10vh 0;
+}
+
+.item {
+  border: .4vh solid #333;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.short-info {
+  border-left: .4vh solid #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30vw;
+  flex-grow: 1;
+}
+
+.price-quanity-container {
+  max-width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: .5vh;
+  margin: 1.5vh 2vh;
+}
+.price-quanity-border {
+  border-top: .4vh solid #333;
+}
+
+.main-img {
+  height: 30vh;
+}
+
+.quantity-container {
+  display: flex;
+  justify-content: left;
+  height: 30px;
+}
+
+.quantity-container img{
+  height: 100%;
+}
+
+.quantity-container button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: .5vh 1vh;
+  cursor: pointer;
+}
+
+.short-info-text {
+  margin: 0 1.5vh;
+  margin-top: 2vh;
+}
+
+.table-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  padding: 2vh 1vh;
+  border: .4vh solid #333;
+  border-top: none;
+}
+
+.specifications {
+  border-collapse: collapse;
+}
+
+.specifications td, .specifications th {
+  border: 1px solid #333;
+  padding: 8px;
+}
+
+.specifications tr:nth-child(even){
+  background-color: #f4f4f4;
+}
+
+@media screen and (max-width: 800px) {
+  .main-border {
+    width: 90%;
+  }
+  .main-img {
+    height: 20vh;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .main-img {
+    height: 15vh;
+  }
+}

@@ -1,0 +1,137 @@
+.main-content {
+  display: flex;
+  min-height: 89.5vh;
+}
+
+.sidebar {
+  background-color: #303030a5;
+  color: #fff;
+  flex-basis: 30vw;
+  padding: 1vh;
+}
+
+.sidebar li {
+  list-style: none;
+  margin: .5vh 0;
+}
+
+.sidebar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (max-width: 650px) {
+  .main-content {
+    flex-direction: column;
+  }
+  .sidebar {
+    flex-basis: 100%;
+    padding: 1vh;
+  }
+  .sidebar-item, .sidebar h2 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  .sidebar a {
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .product, .products {
+    width: 100% !important;
+  }
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  height: 5vh;
+  padding: 1vh;
+  border: .2vh solid transparent;
+}
+
+.sidebar-item:hover {
+  cursor: pointer;
+  border: .2vh solid white
+}
+
+.product-categories {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1vh;
+  flex-grow: 1;
+}
+
+.products {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1vh;
+}
+
+.product {
+  background-color: #fff;
+  border: .15vh solid #ccc;
+  margin: 1vh;
+  padding: 1vh;
+  text-align: center;
+  width: 30vh;
+}
+
+.product-category {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  padding: 3vh;
+}
+
+.product button {
+  font-size: 1.5vh !important;
+}
+
+.product-buttons a {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.price {
+  font-size: 3vh !important;
+}
+
+.product img {
+  max-width: 100%;
+}
+
+.product h2 {
+  font-size: 1.5em;
+  margin-top: 2vh;
+}
+
+.product p {
+  color: #666;
+}
+
+.product .price {
+  font-weight: bold;
+  color: #333;
+  font-size: 1.5em;
+  margin-top: 2vh;
+}
+
+.product button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 1vh 2vh;
+  margin-top: 2vh;
+  cursor: pointer;
+}
